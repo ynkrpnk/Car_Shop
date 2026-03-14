@@ -8,56 +8,55 @@
 <body>
     <a href="/index.html">Home</a>
     <form >
+<fieldset>
+            <legend>Personal Info</legend>
 
-            <fieldset>
+            <div class="form_element">
+                <label for="first_name">First Name</label>
+                <input id="first_name" type="text">
+            </div>
 
-                <legend>Personal Info</legend>
+            <div class="form_element">
+                <label for="last_name">Last Name</label>
+                <input id="last_name" type="text">
+            </div>
 
-        <div class="form_element">
-            <label for="text">First Name</label>
-            <input id="name">
-        </div>
+            <div class="form_element">
+                <label for="date">Birthday</label>
+                <input type="date" id="date">
+            </div>
 
-        <div class="form_element">
-            <label for="text">Last Name</label>
-            <input id="text">
-        </div>
+            <div class="form_element">
+                <label>Gender</label>
+                <input type="radio" name="gender" id="male"> <label for="male">Male</label>
+                <input type="radio" name="gender" id="female"> <label for="female">Female</label>
+            </div>
 
-        <div class="form_element">
-            <label for="date">Birthday</label>
-            <input type="date" id="date">
-        </div>
-
-        <div class="form_element">
-            <label>Gender</label>
-            <input type="radio" name="gender" id="male"> <label for="male">Male</label>
-            <input type="radio" name="gender" id="female"> <label for="male">Female</label>
-        </div>
-
-        <div class="form_element">
-            <label for="date">Drive experience</label>
-            <input type="number">
-        </div>
-
+            <div class="form_element">
+                <label for="exp">Drive experience</label>
+                <select id="exp">
+                    <option value="0">None</option>
+                    <option value="1">1 year</option>
+                    <option value="3">3 years</option>
+                    <option value="5">5+ years</option>
+                </select>
+            </div>
         </fieldset>
 
         <fieldset>
-        <legend>Contacts</legend>
-
-        <div class="form_element">
-            <label for="email">Email</label>
-            <input type="email" id="email">
-        </div>
-        
-        <div class="form_element">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone">
-        </div>
-        
-        <div class="form_element">
-            <label for="address">Address</label>
-            <textarea id="address"></textarea>
-        </div>
+            <legend>Contacts</legend>
+            <div class="form_element">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+            </div>
+            <div class="form_element">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone">
+            </div>
+            <div class="form_element">
+                <label for="address">Address</label>
+                <textarea id="address"></textarea>
+            </div>
         </fieldset>
 
 
@@ -94,7 +93,7 @@
         </div>
         
         <div class="form_element">
-            <label>Color</label>
+            <label>Color</label>    
                 <input type="radio" name="color" id="red" checked> <label for="red">Red</label>
                 <input type="radio" name="color" id="black"> <label for="black">Black</label>
                 <input type="radio" name="color" id="blue"> <label for="blue">Blue</label>
@@ -109,7 +108,7 @@
 
         </fieldset>
         <div class="form_buttons">
-            <button type="button">Cancel</button>
+            <button type="reset">Cancel</button>
             <button type="submit">Ok</button>
         </div>
 
