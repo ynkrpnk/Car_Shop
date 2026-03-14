@@ -102,8 +102,26 @@
         </div>
         
         <div class="form_element">
-            <label for="price">Price</label>
-            <input type="range" id="price" min="0" max="100000">
+            <label for="renge">Price</label>
+            <input 
+            type="range" 
+            id="renge"
+            min="10"
+            max="100"
+            step="10"
+            list="money"
+            >
+            <datalist id="money">
+                <option value="10"></option>
+                <option value="20"></option>
+                <option value="30"></option>
+                <option value="40"></option>
+                <option value="50"></option>
+                <option value="60"></option>
+                <option value="70"></option>
+                <option value="80"></option>
+                <option value="90"></option>
+            </datalist>
         </div>
 
         </fieldset>
