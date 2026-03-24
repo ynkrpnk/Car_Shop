@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="../css/flexbox-style.css">
 </head>
 <body>
     <a href="/index.html">Home</a>
+    <p>Home work for CSS flexbox</p>
     <form >
+        <div class="form-body">
 <fieldset>
             <legend>Personal Info</legend>
 
@@ -35,10 +38,13 @@
             <div class="form_element">
                 <label for="exp">Drive experience</label>
                 <select id="exp">
-                    <option value="0">None</option>
-                    <option value="1">1 year</option>
-                    <option value="3">3 years</option>
-                    <option value="5">5+ years</option>
+                    <option value="0">---</option>
+                    <option value="1">expent</option>
+                    <option value="3">more than 10g</option>
+                    <option value="5">5-10</option>
+                    <option value="5">2-5</option>
+                    <option value="5">less than 2</option>
+                    <option value="5">beginner</option>
                 </select>
             </div>
         </fieldset>
@@ -100,36 +106,29 @@
                 <input type="radio" name="color" id="white"> <label for="white">White</label>
                 <input type="radio" name="color" id="grey"> <label for="grey">Grey</label>
         </div>
-        
-        <div class="form_element">
-            <label for="renge">Price</label>
-            <input 
-            type="range" 
-            id="renge"
-            min="10"
-            max="100"
-            step="10"
-            list="money"
-            >
-            <datalist id="money">
-                <option value="10"></option>
-                <option value="20"></option>
-                <option value="30"></option>
-                <option value="40"></option>
-                <option value="50"></option>
-                <option value="60"></option>
-                <option value="70"></option>
-                <option value="80"></option>
-                <option value="90"></option>
-            </datalist>
+<div class="form_element price-row">
+                    <label>Price</label>
+                    <div class="range-container">
+                        <input type="range" min="10" max="80" step="10" list="prices">
+                        <datalist id="prices">
+                            <option value="10" label="10"></option>
+                            <option value="20" label="20"></option>
+                            <option value="30" label="30"></option>
+                            <option value="40" label="40"></option>
+                            <option value="50" label="50"></option>
+                            <option value="60" label="60"></option>
+                            <option value="70" label="70"></option>
+                            <option value="80" label="80"></option>
+                        </datalist>
+                    </div>
+                </div>
+            </fieldset>
         </div>
 
-        </fieldset>
         <div class="form_buttons">
             <button type="reset">Cancel</button>
             <button type="submit">Ok</button>
         </div>
-
     </form>
 </body>
 </html>
